@@ -1,0 +1,154 @@
+.order-inner{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 168px;
+}
+
+.left__list{
+  list-style: none;
+}
+
+.left__item{
+  width: 255px;
+}
+
+.left__item + .left__item{
+  border-top: 1px solid rgba(41 , 48 , 56 , 0.25);
+  opacity: 0.25;
+  &:hover{
+    opacity: 1;
+    transition: all 0.4s ease;
+  }
+}
+
+.left__link{
+  text-decoration: none;
+  font-family: $main-family;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.left__number{
+  margin-right: 28px;
+  color: #83888F;
+}
+
+.left__number--active{
+  color: $main-active-color;
+}
+
+.left__text{
+  color: #333D4B;
+}
+
+.type{
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type ~ .type{
+  margin-bottom: 80px;
+}
+
+.type__img{
+  margin-bottom: 23px;
+}
+.type__title{
+  font-family: $main-family;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+  margin-top: 10px;
+}
+
+.coffee{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.card{
+  width: 228px;
+  padding: 32px 28px 84px 28px;
+  background: #F4F1EB;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: $main-hover-color;
+  }
+}
+
+.card__title{
+  font-family: $main-family;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.card__text{
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+
+input:checked ~ .card{
+  transition: all 0.5s ease;
+  background-color: #0E8784;
+  .card__title , .card__text{
+    color: #fff;
+  }
+}
+
+.summary{
+  width: 730px;
+  padding: 50px 64px;
+  background-color: #293039;
+  border-radius: 15px;
+}
+
+.summary__title{
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.summary__text{
+  font-family: $main-family;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.summary__green{
+  color: $main-active-color;
+}
+
+.btn{
+  margin-top: 40px;
+  float: right;
+  padding: 15px 30px;
+  font-family: 'Fraunces' , 'Arial' sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  background: #E2DEDB;
+  border-radius: 6px;
+  color: #FEFCF7;
+  text-align: center;
+  transition: all 0.4s ease;
+  &:hover{
+    background-color: #0E8784;
+  }
+  &:active{
+    background: #66D2CF;
+  }
+}

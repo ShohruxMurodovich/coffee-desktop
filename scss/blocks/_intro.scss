@@ -1,0 +1,31 @@
+.intro-inner{
+  width: 1280px;
+  height: 450px;
+  margin-bottom: 138px;
+  padding: 137px 0;
+  background-image: url(../../images/intro-bgi.png);
+  background-repeat: no-repeat;
+}
+
+.intro-info{
+  width: 445px;
+  margin-left: 85px;
+}
+
+.intro-info__title{
+  margin: 0;
+  padding: 0;
+  font-family: $main-family;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.intro-info__text{
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
